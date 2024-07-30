@@ -9,8 +9,8 @@
         sans-serif;
     --welcome: 'Amatic SC',
         cursive;
-        --navbar: 'Cherry Swash',
-            cursive;
+        --poppins: "Poppins", 
+             sans-serif;
            --hero: 'Sacramento',
             cursive;
 
@@ -20,7 +20,7 @@
     --green-four: #AFEEEE;  
     --green-five: #8fe051;
     --checkout-green: #4BB543;
-    --navbar-blue: #00929C;
+    --navbar-blue: #D1EDE1;
     --orange: #F76D03;
     --ivory: #F6F7E9;
 }
@@ -215,7 +215,7 @@
 }
 
 .navbar .text-light {
-    color: var(--ivory) !important;
+    color: var(--green-one) !important;
 }
 
 
@@ -224,8 +224,18 @@
 }
 
 .navbar li {
-    font-family: var(--headings);
+    font-family: var(--descriptive-font);
     font-size: 18px;
+    display: flex;
+    align-content: space-around;
+    font-weight:bold;
+}
+
+.navbar li:hover {
+    transform: translateY(-1px);
+    color: var(--checkout-green);
+    font-size: 19px;
+
 }
 
 .custom-toggler .navbar-toggler-icon {
@@ -237,6 +247,11 @@
 
     color: var(--checkout-green)!important;
     font-size: 20px;
+}
+
+.navbar .links svg {
+    margin: 0.5rem;
+    color: var(--green-one);
 }
 
 /* hero */
