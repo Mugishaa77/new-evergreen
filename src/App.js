@@ -11,8 +11,6 @@ import Category from './pages/Category';
 import Wholesale from './pages/Wholesale';
 import Retail from './pages/Retail';
 import Homepage from './pages/Homepage';
-import Hero from './pages/Hero';
-
 
 // login
 import Login from './login/Login';
@@ -76,8 +74,6 @@ function App () {
           <Route path="/stall-names" exact element={<StallNames/>}/>
           <Route path="/#about" exact element={<Homepage/>}/>
             <Route path="/#contact" exact element={<Homepage/>}/>
-            
-          <Route path="/hero" exact element={<Hero/>}/>
 
           <Route path = "/farmer-dashboard" exact element={<FarmerDashboard/>}>
 
