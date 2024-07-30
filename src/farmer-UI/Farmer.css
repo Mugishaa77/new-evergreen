@@ -1,0 +1,427 @@
+/* Dashboard */
+
+.farmer-dashboard {
+    background-color: var(--green-two);
+        padding: 2rem 4rem;;
+}
+
+        /* Media query for screens smaller than 900px */
+            @media screen and (max-width: 900px) {
+                .farmer-dashboard {
+                    padding: 2rem;
+                }
+        
+                .farmer-dashboard h2 {
+                    font-size: 30px;
+                }
+            }
+
+
+/*Side-nav*/
+
+.farmer-dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.farmer-dashboard .side-nav {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    top: 300;
+    border-right: 1px solid var(--green-one);
+    
+
+}
+
+.farmer-dashboard h3 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 32px;
+    font-family: var(--descriptive-font);
+    color: var(--green-one);
+}
+
+.farmer-dashboard .main-title {
+    margin: 0 0 1rem 0;
+        padding: 0;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: var(--green-one);
+
+}
+.farmer-dashboard a {
+    text-decoration: none;
+    margin-bottom: 1 rem;
+    font-size: 14px;
+}
+
+.farmer-dashboard .content {
+    margin-left: 201px;
+   
+    width: calc(100% - 200px);
+}
+
+.farmer-dashboard .link-active {
+    color: orangered;
+}
+
+.farmer-dashboard .link-inactive {
+    color: var(--green-five);
+}
+
+@media (max-width: 900px) {
+    .farmer-dashboard {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem;
+    }
+
+    .farmer-dashboard .side-nav {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    .farmer-dashboard .content {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+        /* FarmerProducts.js */
+    
+        .farmer-products,
+        .create-product {
+            display: flex;
+           justify-content: space-between;
+        }
+    
+        .farmer-products button {
+            padding: 9px 12px;
+            border-radius: 5px;
+            font-weight: 400;
+            letter-spacing: 1.15px;
+            background-color: var(--green-one);
+            color: var(--green-four);
+            border: 1px solid var(--green-four);
+            outline: none;
+            cursor: pointer;
+            margin: 0.5rem 0;
+            font-family: var(--directive-font);
+        }
+    
+        .farmer-products button:hover {
+           color: var(--green-one);
+                background-color: var(--green-four);
+        }
+        .styled-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+            margin-top: 2rem;
+        }
+    
+        .styled-form select,
+        input {
+            padding: 7px;
+            min-height: 30px;
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid var(--green-one);
+            margin: 0.3rem, 0;
+        }
+    
+        .styled-form select {
+            color: var(--green-one);
+        }
+    
+        .image-preview {
+            margin: 2rem 0 2rem 2rem;
+            padding: 2rem;
+            border: 1px solid var(--green-one);
+            max-width: 300px;
+            max-height: 300px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .image-preview p {
+            color: var(--green-one);
+            font-family: var(--descriptive-font);
+        }
+    
+        .farmer-products img {
+            width: 200px;
+            height: 200px;
+            margin-top: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 15px;
+        }
+    
+        .create-submit {
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 2rem;
+            font-weight: 400;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: var(--green-one);
+            color: var(--green-four);
+            letter-spacing: 1.15px;
+            font-family: var(--directive-font);
+        }
+    
+        .create-submit:hover {
+            background-color: var(--green-four);
+            color: var(--green-one);
+        }
+    
+        @media only screen and (max-width: 900px) {
+    
+            .farmer-products,
+            .create-product {
+                padding: 0 1rem;
+                
+            }
+    
+            .styled-form,
+            .image-preview {
+                max-width: 100%;
+                margin: 2rem 0;
+            }
+    
+            .create-submit {
+                margin-top: 1rem;
+            }
+        }
+
+
+                 /* Farmer's Setup */
+        
+                 .farmer-setup {
+                     margin-right: 150px;
+                     margin-left: 0;
+                     background-color: var(--green-two);
+                 }
+        
+                 .farmer-setup h2 {
+                     font-family: var(--descriptive-font);
+                     font-weight: 400;
+                     text-align: center;
+                     letter-spacing: 1.15px;
+                     font-size: 32px;
+                 }
+        
+                 .farmer-setup label {
+                     font-family: var(--descriptive-font);
+                     color: var(--green-one);
+                     font-size: 20px;
+                     padding: 0.5rem;
+                
+                 }
+        
+                 .farmer-setup button {
+                     width: 100px;
+                     height: 40px;
+                     border-radius: 5px;
+                     margin-top: 2rem;
+                     font-weight: 400;
+                     cursor: pointer;
+                     background-color: var(--green-one);
+                     color: var(--green-four);
+                     letter-spacing: 1.15px;
+                     outline: var(--green-five);
+                     border: none;
+                     margin: 1rem;
+                     font-family: var(--directive-font);
+                 }
+
+                 .farmer-setup button:hover {
+                    background-color: var(--checkout-green);
+                    color: var(--green-one);
+                 }
+        
+                 .farmer-setup .container {
+                     max-width: 800px;
+                     margin: 0 auto;
+                     padding: 20px;
+                 }
+
+                 .farmer-setup a {
+                    color: var(--orange);
+                    font-size: 20px;
+                   
+                 }
+
+                 .farmer-setup a:hover {
+                    color: var(--green-one);
+                 }
+        
+                 @media screen and (max-width: 900px) {
+                     .farmer-setup {
+                         margin: 0;
+                         padding: 1rem;
+                     }
+        
+                     .farmer-setup h2 {
+                         font-size: 1.5rem;
+                     }
+        
+                     .farmer-setup label {
+                         font-size: 0.8rem;
+                         padding: 0.5rem;
+                     }
+        
+                     .farmer-setup button {
+                         width: 80px;
+                         height: 30px;
+                         margin-top: 1rem;
+                         font-size: 0.8rem;
+                     }
+        
+                     .farmer-setup .container {
+                         max-width: 600px;
+                     }
+                 }
+
+                 /*farmer-profile  */
+
+                 .farmer-profile h3 {
+                    font-family: var(--descriptive-font);
+                    text-transform: capitalize;
+                    color: var(--green-one);
+                    font-size: 32px;
+                    text-align: center; 
+                 }
+
+                 .farmer-profile .contact-info {
+                    margin-top: 1rem;
+                    text-decoration: underline;
+                        text-decoration-thickness: 0.5px;
+                 }
+
+                 .farmer-profile h2 {
+                    font-family: var(--descriptive-font);
+                    text-transform: capitalize;
+                        color: var(--green-one);
+                        font-size: 28px;
+                        text-align: left;
+                        opacity: 0.9;
+                 }
+
+                 .farmer-profile p {
+                    font-family: var(--descriptive-font);
+                    color: var(--green-one);
+                    font-size: 22px;
+                    text-align: left;
+                    opacity: 0.85;
+                 }
+
+                                 @media (max-width: 900px) {
+                                     .farmer-profile h3 {
+                                         font-size: 24px;
+                                         text-align: center;
+                                     }
+                
+                                     .farmer-profile .contact-info {
+                                         margin-top: 0.5rem;
+                                         text-decoration-thickness: 0.5px;
+                                     }
+                
+                                     .farmer-profile h2 {
+                                         font-size: 20px;
+                                        
+                                         opacity: 1;
+                                     }
+                
+                                     .farmer-profile p {
+                                         font-size: 18px;
+                                        
+                                         opacity: 1;
+                                     }
+                                 }
+
+                 /* Summary */
+
+                 .summary h3 {
+                    font-family: var(--descriptive-font);
+                        text-transform: capitalize;
+                        color: var(--green-one);
+                        font-size: 32px;
+                        text-align: center;
+                        text-decoration: underline;
+                        padding: 1rem 1rem;
+                 }
+
+                 .summary p {
+                    font-family: var(--descriptive-font);
+                        text-transform: capitalize;
+                        color: var(--checkout-green);
+                        font-size: 26px;
+                        text-align: left;
+                        padding: 1rem 1rem;
+
+                 }
+
+                                  .summary ul {
+                                      padding: 1rem 1rem;
+                                  }
+                
+                                  .summary li {
+                                      font-family: var(--headings);
+                                      color: var(--orange);
+                                      text-align: left;
+                                      font-size: 22px;
+                                      opacity: 0.9;
+                                      list-style: circle;
+                                  }
+
+                 /* create product */
+
+                                 .create-product h4 {
+                                     font-size: 28px;
+                                     font-family: var(--descriptive-font);
+                                     color: var(--green-one);
+                                 }
+
+                                                                 @media (max-width: 900px) {
+                                                                     .summary h3 {
+                                                                         font-size: 24px;
+                                                                         text-align: center;
+                                                                         text-decoration: underline;
+                                                                         padding: 1rem;
+                                                                     }
+                                
+                                                                     .summary p {
+                                                                         font-size: 20px;
+                                                                        
+                                                                         padding: 1rem;
+                                                                     }
+                                
+                                                                     .summary ul {
+                                                                         padding: 1rem;
+                                                                     }
+                                
+                                                                     .summary li {
+                                                                         font-size: 18px;
+                                                            
+                                                                         opacity: 1;
+                                                                         list-style: circle;
+                                                                     }
+                                
+                                                                     .create-product h4 {
+                                                                         font-size: 24px;
+                                                                     }
+                                                                 }

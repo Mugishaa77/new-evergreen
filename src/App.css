@@ -1,0 +1,580 @@
+/* roots */
+
+:root {
+    --descriptive-font: 'Lusitana',
+        serif;
+    --directive-font: 'Ysabeau',
+        sans-serif;
+    --headings: 'Lato',
+        sans-serif;
+    --welcome: 'Amatic SC',
+        cursive;
+        --navbar: 'Cherry Swash',
+            cursive;
+           --hero: 'Sacramento',
+            cursive;
+
+    --green-one: #1F5229;
+    --green-two: #F2F7F0;
+    --green-three: #D8F7CA;
+    --green-four: #AFEEEE;  
+    --green-five: #8fe051;
+    --checkout-green: #4BB543;
+    --navbar-blue: #00929C;
+    --orange: #F76D03;
+    --ivory: #F6F7E9;
+}
+
+
+/* homepage */
+
+.homepage {
+    background-image: url("./images/new.jpg");
+    background-repeat: no-repeat;
+    background-color: var(--green-one);
+    background-size: cover;
+    background-position: center;
+   height: 400px;
+    
+       
+}
+
+.homepage .welcome {
+    font-weight: 400;
+    font-size: 70px;
+    padding: 200px;
+    font-family: var(--welcome);
+    color: var(--green-one);
+    animation: bounce 2s infinite;
+   
+}
+
+.homepage a  {
+    text-decoration: none;
+}
+
+.homepage  .down {
+    color: var(--green-four);
+    cursor:pointer;
+    animation: bounce 2s infinite;
+    text-align: right;
+    margin-right: 20px;
+   padding-top: 10px;
+   
+}
+
+.homepage .down:hover {
+    color: var(--checkout-green);
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+.homepage button {
+    display: block;
+    width: 240px;
+    height: 60px;
+    border-radius: 4px;
+   margin-top: 2rem;
+    margin-left: 100px;
+    border: 1.5px solid var(--green-five);
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(31, 82, 41, 0.5);
+    color: var(--green-five);
+    font-size: 36px;
+    font-weight: 20;
+    font-family: var(--welcome);
+    opacity: 0.8;
+    position: relative;
+}
+
+.homepage button::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(to right, rgba(31,
+        82,
+        41, 0.3), transparent);
+    z-index: -1;
+}
+.homepage button:hover {
+        background-color: var(--checkout-green);
+            color: var(--green-one);
+            font-weight: 450;
+}
+
+.homepage .cta {
+    animation: shineDisplay 5s linear infinite;
+}
+
+@keyframes shineDisplay {
+    0% {
+        color: var(--green-four);
+    }
+
+    25% {
+    
+        color: var(--green-five);
+    }
+
+    50% {
+       
+        color: var(--green-four);
+    }
+
+    75% {
+        color: var(--green-five);
+    }
+
+    100% {
+        color: var(--green-four);
+    }
+}
+
+.homepage a .last-note {
+    text-align: center;
+    padding: 2rem 2rem;
+    color: var(--orange);
+    font-size: 20px;
+    font-family: var(--descriptive-font);
+}
+
+.homepage a .last-note:hover {
+    color: orangered;
+}
+
+@media (max-width: 900px) {
+    
+            .homepage {
+    
+                background-image: url("./images/new-small.jpg");
+                height: 300px;
+                margin: 0;
+            }
+
+           .homepage .welcome {
+            font-size: 36px;
+            padding: 50px;
+           }
+
+    
+            .homepage .down {
+                margin-right: 10px;
+                padding-top: 5px;
+                color: var(--green-four);
+                width: 20;
+                height: 20;
+            }
+
+            .homepage .first {
+                margin-top: 30px;
+            }
+       
+    .homepage button {
+        text-align: left;
+        margin-left: 30px;
+        font-size: 24px;
+        width: 150px;
+        height: 50px;
+        padding-top: 0;
+        cursor: pointer;
+    }
+
+    .homepage button:hover {
+        background-color: var(--green-four);
+
+    }
+
+    .homepage a .last-note {
+        padding: 1rem;
+        font-size: 16px;
+    }
+}
+/* navbar */
+.navbar {
+    height: 80px;
+}
+.navbar .container {
+    width: 100% !important;
+    white-space: nowrap;
+
+}
+
+.navbar .text-light {
+    color: var(--ivory) !important;
+}
+
+
+.navbar-style {
+    background-color: var(--navbar-blue) !important;
+}
+
+.navbar li {
+    font-family: var(--headings);
+    font-size: 18px;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.nav-link.active {
+
+
+    color: var(--checkout-green)!important;
+    font-size: 20px;
+}
+
+/* hero */
+.hero {
+    background-image: url("./images/hero.jpg");
+    background-repeat: no-repeat;
+    background-color: var(--green-two);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    font-family: var(--hero);
+
+
+}
+
+.hero .text {
+    text-align: right;
+    padding-top: 140px;
+    margin-right: 150px;
+    animation: shine 4s ease-in infinite;
+    
+}
+
+@keyframes shine {
+
+    0% {
+        color: var(--green-one);
+
+    }
+
+    20% {
+        color: var(--orange);
+    }
+
+    80% {
+        color: var(--orange);
+    }
+
+    100% {
+        color: var(--green-one);
+    }
+
+}
+
+.hero .font-one {
+    font-size: 56px;
+}
+
+.hero .font-two {
+    font-size: 48px;
+}
+
+.hero .btn-outline {
+    background-color: var(--green-one) !important;
+}
+
+.hero .btn-primary {
+    background-color: var(--green-one) !important;
+}
+
+.hero button {
+
+        color: var(--green-four);
+        letter-spacing: 1.15px;
+        font-family: var(--directive-font);
+}
+
+.hero button {
+    margin: 25px !important;
+    transition: all 200ms ease;
+    opacity: 1;
+}
+
+.hero button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    background-color: var(--green-one) !important;
+}
+
+.hero .call-to-action {
+    font-family: var(--navbar);
+    margin: 70px;
+}
+
+@media only screen and (max-width: 900px) {
+    .hero {
+        height: 300px;
+        background-image: url("./images/inverted-hero.jpg");
+    }
+
+    .hero .text {
+        top: 180px;
+        text-align: center;
+        margin-right: 72px;
+    }
+
+    .hero .call-to-action {
+        margin: 30px;
+    }
+}
+
+/* about */
+.about {
+    background-color: var(--green-two);
+    font-family: var(--descriptive-font);
+    line-height: 1.5;
+    word-wrap: break-word;
+    font-size: 19px;
+    color: var(--green-one);
+    text-align: center;
+    padding: 40px 0;
+
+}
+
+.about h3 {
+    font-family: var(--welcome);
+    font-size: 32px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.about h4 {
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.about p {
+    opacity: 0.8;
+    font-weight: 400;
+
+}
+
+
+.about .container {
+    max-width: 800px;
+}
+
+.about .section {
+    margin-bottom: 40px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.about a {
+    text-decoration: none;
+}
+
+.about .up {
+    color: var(--green-one);
+    text-align: left;
+    margin-left: 20px;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    
+}
+
+.about .up:hover {
+    color: var(--checkout-green);
+}
+
+.about .down {
+    color: var(--green-one);
+}
+
+.about .down:hover {
+    color: var(--orange);
+}
+
+
+
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.about .anchors {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+    .about {
+        font-size: 14px;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+    .about h3 {
+        font-size: 24px;
+    }
+
+    .about h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .about .container {
+        max-width: 600px;
+    }
+
+    .about .section {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
+    .about .up {
+        left: 0;
+        top: 0;
+    }
+
+    .about .down {
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/* contact section */
+
+.contact  {
+    background-color: var(--green-two);
+    text-align: center;
+    color: var(--green-one);
+    font-size: 20px;
+               
+}
+
+.contact h3 {
+    font-family: var(--welcome);
+        font-size: 32px;  
+        text-align: left; 
+        padding-bottom: 20px;
+            
+}
+
+
+.contact h4 {
+    opacity: 0.8;
+    font-family: var(--welcome);
+    text-align: center;
+    font-size: 50px;
+    animation: shine 4s ease-in infinite;
+   
+    
+    }
+    
+    @keyframes shine {
+    
+        0% {
+            color: var(--green-one);
+    
+        }
+
+        50% {
+            color: #008400;
+        }
+
+         
+       
+    }
+
+
+.contact p {
+    font-family: var(--descriptive-font);
+    opacity: 0.8;
+    text-align: center;
+
+}
+
+.contact .socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact .socials a {
+    color: var(--green-one);
+    /* Change the font color here */
+    margin-bottom: 10px;
+    opacity: 0.8;
+    /* Adjust the spacing between icons */
+}
+
+.contact .socials a:hover {
+    color: var(--orange);
+}
+
+.contact .socials span {
+    padding: 1rem 1rem;
+    font-family: var(--descriptive-font);
+}
+
+.contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    .contact {
+        font-size: 16px;
+    }
+
+    .contact h3 {
+        font-size: 28px;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .contact h4 {
+        font-size: 40px;
+    }
+
+    .contact p {
+        text-align: center;
+    }
+
+    .contact .socials {
+        margin-bottom: 10px;
+    }
+
+    .contact .container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+}

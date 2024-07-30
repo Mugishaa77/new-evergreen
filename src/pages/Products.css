@@ -1,0 +1,82 @@
+.products {
+    font-family: 'Poppins', serif;
+    color: #357402 !important;
+    text-align:center;
+    margin-top: 40px;
+    background-color: #EEEEEE;
+}
+
+.products .text-warning, .border-warning  {
+    color: #357402 !important;
+}
+
+
+.product:hover {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+}
+
+.selected {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 255, 0.5);
+}
+
+.products h1, .display h1{
+    font-family: 'Playfair Display', serif;
+}
+
+
+.products .btn {
+    cursor: pointer;
+        opacity: 1;
+        background-color: #357402!important;
+}
+
+.products .btn:hover {
+    transition: all 200ms ease;
+    opacity: 0.7;
+}
+
+.products img  {
+    height: 200px;
+    width: 200px;
+}
+
+.products .card-body {
+    height: 135px;
+}
+
+.products .navbar {
+    width: 100% !important;
+        white-space: nowrap;
+}
+
+.display img {
+    height: 200px;
+    width: 200px;
+}
+
+.my-carousel .slick-slider {
+    margin: 0 -10px !important;
+}
+
+.slick-dots li {
+    width: 10px;
+    /* Adjust the size of the dots */
+    height: 10px;
+    /* Adjust the size of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+    color: orangered!important;
+    /* Change the color of the active dot */
+    font-size: 12px;
+    /* Adjust the size of the active dot */
+}
+
+@media (max-width: 900px) {
+    .display img {
+        height: 150px;
+        width: 150px;
+        font-size: 75%;
+    }
+
+}

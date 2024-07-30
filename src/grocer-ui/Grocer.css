@@ -1,0 +1,455 @@
+/*Grocer Dashboard*/
+
+.grocer-dashboard {
+    background-color: var(--green-two);
+    padding: 2rem 4rem;
+    
+}
+
+@media screen and (max-width: 900px) {
+    .grocer-dashboard {
+        padding: 2rem;
+    }
+
+        .grocer-dashboard h3 {
+            font-size: 30px;
+        }
+
+
+}
+
+/*Side Nav*/
+
+.grocer-dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.grocer-dashboard .side-nav {
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    top: 300;
+    border-right: 1px solid var(--green-one);
+
+
+}
+
+.grocer-dashboard h3 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--green-one);
+    font-family: var(--descriptive-font);
+}
+
+.grocer-dashboard a {
+    text-decoration: none;
+    margin-bottom: 1 rem;
+    font-size: 14px;
+}
+
+.grocer-dashboard .content {
+    margin-left: 201px;
+    padding: 2rem 2rem;
+    width: calc(100% - 200px);
+}
+
+.grocer-dashboard .link-active {
+    color: orangered;
+}
+
+.grocer-dashboard .link-inactive {
+    color: var(--green-five);
+}
+
+@media screen and (max-width: 900px) {
+    .grocer-dashboard {
+        flex-direction: column;
+        height: auto;
+            padding: 2rem;
+    }
+
+    .grocer-dashboard .side-nav {
+        width: 100%;
+            height: auto;
+            border-right: none;
+            padding: 0;
+            margin-bottom: 2rem;
+    }
+
+    .grocer-dashboard .content {
+        margin-left: 0;
+        width: 100%;
+       
+    }
+
+    
+}
+
+
+/*Grocer Products*/
+
+.grocer-products,
+.grocer-create-product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grocer-products button {
+     padding: 9px 12px;
+            border-radius: 5px;
+            font-weight: 400;
+            letter-spacing: 1.15px;
+            background-color: var(--green-one);
+            color: var(--green-four);
+            border: 1px solid var(--green-four);
+            outline: none;
+            cursor: pointer;
+            margin: 0.5rem 0;
+            font-family: var(--directive-font);
+}
+
+.grocer-products button:hover {
+ color: var(--green-one);
+                background-color: var(--green-four);
+}
+
+.styled-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-top: 2rem;
+}
+
+.styled-form select,
+input {
+    padding: 7px;
+    min-height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--green-one);
+    margin: 0.3rem, 0;
+}
+
+.styled-form select {
+    color: var(--green-one);
+}
+
+.image-preview {
+     margin: 2rem 0 2rem 2rem;
+            padding: 2rem;
+            border: 1px solid var(--green-one);
+            max-width: 300px;
+            max-height: 300px;
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+.image-preview p {
+    color: var(--green-one);
+    font-family: var(--descriptive-font);
+}
+
+.grocer-create-product img {
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+.grocer-create-product h4 {
+    margin: 0 0 1rem 0;
+        padding: 0;
+        text-transform: capitalize;
+        font-size: 28px;
+        font-family: var(--descriptive-font);
+        color: var(--green-one);
+}
+
+.create-submit {
+   width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 2rem;
+            font-weight: 400;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: var(--green-one);
+            color: var(--green-four);
+            letter-spacing: 1.15px;
+            font-family: var(--directive-font);
+}
+
+.create-submit:hover {
+    background-color: var(--green-four);
+    color: var(--green-one);
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+    .grocer-products,
+    .grocer-create-product {
+        padding: 0 1rem;
+    }
+
+    .styled-form {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    .image-preview {
+        margin: 2rem 0;
+        max-width: 100%;
+        
+    }
+}
+
+
+/* Grocer Setup */
+
+.grocer-setup {
+    margin-right: 150px;
+    margin-left: 0;
+    background-color: var(--green-two);
+}
+
+.grocer-setup h2 {
+    font-family: var(--descriptive-font);
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.15px;
+    font-size: 28px;
+
+
+}
+
+.grocer-setup label {
+    font-family: var(--descriptive-font);
+        color: var(--green-one);
+        font-size: 20px;
+        padding: 0.5rem;
+
+}
+
+.grocer-setup button {
+    width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 2rem;
+        font-weight: 400;
+        cursor: pointer;
+        background-color: var(--green-one);
+        color: var(--green-four);
+        letter-spacing: 1.15px;
+        outline: var(--green-five);
+        border: none;
+        margin: 1rem;
+        font-family: var(--directive-font);
+}
+.grocer-setup button:hover {
+    background-color: var(--checkout-green);
+        color: var(--green-one);
+}
+.grocer-setup .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.grocer-setup a {
+    color: var(--orange);
+    font-size: 20px;
+
+}
+
+.grocer-setup a:hover {
+    color: var(--green-one);
+}
+
+@media (max-width: 900px) {
+    .grocer-setup {
+        margin-right: 0;
+        margin-left: 0;
+        background-color: var(--green-two);
+    }
+
+    .grocer-setup h2 {
+        font-size: 24px;
+    }
+
+    .grocer-setup label {
+        font-size: 18px;
+    }
+
+    .grocer-setup button {
+        width: 80px;
+        height: 30px;
+        margin-top: 1rem;
+        font-size: 16px;
+        margin: 0.5rem;
+    }
+
+    .grocer-setup .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .grocer-setup a {
+        font-size: 16px;
+    }
+}
+
+/* Grocer Profile */
+.grocer-profile h1 {
+    font-family: var(--descriptive-font);
+    text-transform: capitalize;
+    color: var(--green-one);
+    font-size: 32px;
+    text-align: center;
+}
+
+.grocer-profile .contact-info {
+    margin-top: 1rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+}
+
+.grocer-profile h6 {
+    font-family: var(--descriptive-font);
+    text-transform: capitalize;
+    color: var(--green-one);
+    font-size: 28px;
+    text-align: left;
+    opacity: 0.9;
+}
+
+.grocer-profile p {
+    font-family: var(--descriptive-font);
+    color: var(--green-one);
+    font-size: 22px;
+    text-align: left;
+    opacity: 0.85;
+}
+
+@media (max-width: 900px) {
+    .grocer-profile h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .grocer-profile .contact-info {
+        margin-top: 0.5rem;
+        text-decoration-thickness: 0.5px;
+    }
+
+    .grocer-profile h6 {
+        font-size: 20px;
+        
+        opacity: 1;
+    }
+
+    .grocer-profile p {
+        font-size: 18px;
+       
+        opacity: 1;
+    }
+}
+ /* Summary */
+
+                 .grocer-summary h3 {
+                    font-family: var(--descriptive-font);
+                        text-transform: capitalize;
+                        color: var(--green-one);
+                        font-size: 32px;
+                        text-align: center;
+                        text-decoration: underline;
+                        padding: 1rem 1rem;
+                 }
+
+                                 .grocer-summary p {
+                                     font-family: var(--descriptive-font);
+                                     text-transform: capitalize;
+                                     color: var(--checkout-green);
+                                     font-size: 26px;
+                                     text-align: left;
+                                     padding: 1rem 1rem;
+
+                                 }
+
+                                 .grocer-summary ul {
+                                    padding: 1rem 1rem;
+                                 }
+
+                                 .grocer-summary li {
+                                    font-family: var(--headings);
+                                    color: var(--orange);
+                                    text-align: left;
+                                    font-size: 22px;
+                                    opacity: 0.9;
+                                    list-style: circle;
+                                 }
+
+                 /* create product */
+
+                                 .grocer-create-product h3 {
+                                     font-size: 28px;
+                                     font-family: var(--descriptive-font);
+                                     color: var(--green-one);
+                                 }
+/* Grocer Products */
+.grocer-products h3 {
+    margin: 0 0 1rem 0;
+        padding: 0;
+        text-transform: capitalize;
+        font-size: 32px;
+        font-family: var(--descriptive-font);
+        color: var(--green-one);
+}
+
+ @media (max-width: 900px) {
+     .grocer-summary h3 {
+         font-size: 24px;
+         text-align: center;
+         text-decoration: underline;
+         padding: 1rem;
+     }
+
+     .grocer-summary p {
+         font-size: 20px;
+         padding: 1rem;
+     }
+
+     .grocer-summary ul {
+         padding: 1rem;
+     }
+
+     .grocer-summary li {
+         font-size: 18px;
+         opacity: 1;
+         list-style: circle;
+     }
+
+     .grocer-create-product h3 {
+         font-size: 24px;
+     }
+
+     .grocer-products h3 {
+         font-size: 24px;
+         margin-bottom: 1rem;
+     }
+ }
+

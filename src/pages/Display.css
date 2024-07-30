@@ -1,0 +1,477 @@
+.main-display {
+    color: var(--green-one);
+    background-color: var(--ivory);
+    font-family: var(--descriptive-font);
+
+}
+
+.main-display h3 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--green-one);
+}
+
+.main-display .back-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-family: var(--directive-font);
+
+}
+
+.main-display .back-link:hover {
+    color: var(--green-one);
+}
+
+.main-display .next-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    right: 20px;
+    font-family: var(--directive-font);
+
+}
+
+.main-display .next-link:hover {
+    color: var(--green-one);
+}
+
+.main-display button {
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--green-one);
+    color: var(--green-four);
+    letter-spacing: 1.15px;
+    font-family: var(--directive-font);
+}
+
+.main-display button:hover {
+    background-color: var(--green-four);
+    color: var(--green-one);
+}
+.main-display a {
+    text-decoration: none;
+}
+
+.main-display p {
+    font-family: var(--headings);
+    font-size: 18px;
+    color: var(--navbar-blue);
+}
+ .main-display p:hover {
+    color: var(--checkout-green);
+
+ }
+
+ .main-display .find {
+    color: var(--checkout-green);
+ }
+@media (max-width: 900px) {
+    .main-display {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .main-display h3 {
+        font-size: 28px;
+    }
+
+    
+}
+
+
+
+/*Position the nav divs appropriately to enable mobile view */
+/* Start on media queries and mobile responsiveness from this section next time */
+
+/*Wholesale */
+/*Wholesale */
+.wholesale-goods {
+    background-color: var(--green-two);
+    padding: 2rem 4rem;
+
+}
+
+.wholesale-goods h3 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--descriptive-font);
+    color: var(--green-one);
+}
+
+.wholesale-goods .back-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-family: var(--directive-font);
+
+}
+
+.wholesale-goods .back-link:hover {
+    color: var(--green-one);
+}
+
+.wholesale-goods .next-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    right: 20px;
+    font-family: var(--directive-font);
+
+}
+
+.wholesale-goods .next-link:hover {
+    color: var(--green-one);
+}
+
+.wholesale-goods button {
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--green-one);
+    color: var(--green-four);
+    letter-spacing: 1.15px;
+    font-family: var(--directive-font);
+}
+
+.wholesale-goods button:hover {
+    background-color: var(--green-four);
+    color: var(--green-one);
+}
+
+.wholesale-goods p {
+    color: var(--green-one);
+    font-family: var(--descriptive-font);
+}
+
+.product-search {
+    text-align: right;
+}
+
+.wholesale-goods h6 {
+    font-family: var(--descriptive-font);
+    color: var(--navbar-blue);
+    font-size: 22px;
+    padding: 2rem 2rem;
+}
+
+.wholesale-goods .product {
+    width: 250px;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: var(--green-three);
+    box-shadow: -5px -5px 10px var(--green-four),
+        2px 2px 5px var(--green-three);
+}
+
+.wholesale-goods h4 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--descriptive-font);
+    opacity: 0.8;
+
+}
+
+.wholesale-goods .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.wholesale-goods .details .price {
+    font-weight: 20px;
+    font-weight: 700;
+    color: var(--green-one);
+    letter-spacing: 1.15px;
+    font-family: var(--descriptive-font);
+
+}
+
+.wholesale-goods .foot-note {
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .wholesale-goods {
+        padding: 2rem;
+    }
+
+        .wholesale-goods h3 {
+            font-size: 30px;
+        }
+    
+        .wholesale-goods .back-link {
+            top: 150px;
+        }
+    
+        .wholesale-goods .next-link {
+            top: 150px;
+        }
+    
+        .wholesale-goods button {
+            height: 35px;
+            letter-spacing: 1px;
+        }
+    
+        .wholesale-goods p {
+            font-size: 16px;
+        }
+    
+        .wholesale-goods h6 {
+            font-size: 16px;
+            padding: 1.5rem;
+        }
+    
+        .wholesale-goods .product {
+            width: 200px;
+            height: 350px;
+            margin: 0.5rem auto;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-family: var(--descriptive-font);
+        }
+    
+        .wholesale-goods h4 {
+            font-size: 20px;
+            padding: 1rem 1rem;
+        }
+    
+        .wholesale-goods .details .price {
+            font-size: 16px;
+        }
+    
+        .wholesale-goods .foot-note {
+            padding: 1.5rem;
+        }
+
+        .wholesale-goods img {
+            max-width: 180px;
+            height: 180px;
+        }
+
+
+    
+    }
+/*Retail*/
+
+.retail {
+    background-color: var(--green-two);
+    padding: 2rem 4rem;
+
+}
+
+.retail h3 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--descriptive-font);
+    color: var(--green-one);
+}
+
+.retail .back-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-family: var(--directive-font)
+
+}
+
+.retail .back-link:hover {
+    color: var(--green-one);
+}
+
+.retail .next-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    right: 20px;
+    font-family: var(--directive-font);
+
+}
+
+.retail .next-link:hover {
+    color: var(--green-one);
+}
+
+.retail button {
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--green-one);
+    color: var(--green-four);
+    letter-spacing: 1.15px;
+    font-family: var(--directive-font);
+}
+
+.retail button:hover {
+    background-color: var(--green-four);
+    color: var(--green-one);
+}
+
+.retail p {
+    color: var(--green-one);
+    font-family: var(--descriptive-font);
+}
+
+.retail h6 {
+    font-family: var(--descriptive-font);
+    color: var(--navbar-blue);
+    font-size: 18px;
+    padding: 2rem 2rem;
+}
+
+.retail .product {
+    width: 250px;
+    max-width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 15px;
+    background-color: var(--green-three);
+    box-shadow: -5px -5px 10px var(--green-four),
+        2px 2px 5px var(--green-three);
+}
+
+.retail h4 {
+    font-size: 25px;
+    font-weight: 400;
+    font-family: var(--descriptive-font);
+    opacity: 0.8;
+
+}
+
+.retail .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.retail .details .price {
+    font-weight: 20px;
+    font-weight: 700;
+    color: var(--green-one);
+    letter-spacing: 1.15px;
+    font-family: var(--descriptive-font);
+
+}
+
+.retail .foot-note {
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+.foot-note a {
+text-decoration: none;
+}
+
+.foot-note p {
+        color: var(--orange);
+}
+
+.foot-note h5 {
+        font-family: var(--directive-font);
+        font-size: 20px;
+        color: var(--orange);
+}
+
+@media screen and (max-width: 900px) {
+    .retail {
+        padding: 2rem;
+    }
+
+        .retail h3 {
+            font-size: 30px;
+        }
+    
+        .retail .back-link {
+            top: 150px;
+        }
+    
+        .retail .next-link {
+            top: 150px;
+        }
+    
+        .retail button {
+            height: 35px;
+            letter-spacing: 1px;
+        }
+    
+        .retail p {
+            font-size: 16px;
+        }
+    
+        .retail h6 {
+            font-size: 16px;
+            padding: 1.5rem;
+        }
+    
+        .retail .product {
+            width: 200px;
+            height: 350px;
+            margin: 0.5rem auto;
+            padding: 0.5rem;
+            border-radius: 10px;
+        }
+
+        .retail img {
+            max-width: 180px;
+            height: 180px;
+        }
+    
+        .retail h4 {
+            font-size: 20px;
+        }
+    
+        .retail .details .price {
+            font-size: 16px;
+        }
+    
+        .retail .foot-note {
+            padding: 1.5rem;
+        }
+    
+        .retail .foot-note a {
+            text-decoration: none;
+        }
+    
+        .retail .foot-note p {
+            color: var(--orange);
+        }
+    
+        .retail .foot-note h5 {
+            font-size: 20px;
+        }
+    }

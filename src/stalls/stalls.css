@@ -1,0 +1,214 @@
+/* Stall Numbers */
+.stall-numbers {
+    padding: 2rem 4rem;
+        background-color: var(--green-two);
+        height: 500px;
+}
+
+.stall-numbers .back-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-family: var(--directive-font)
+}
+
+.stall-numbers .back-link:hover {
+    color: var(--green-one);
+}
+
+.stall-numbers h3 {
+    font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        font-family: var(--descriptive-font);
+        color: var(--green-one);
+        padding: 2rem 2rem;
+}
+
+.stall-numbers h6 {
+    font-size: 20px;
+    font-family: var(--descriptive-font);
+    color: var(--navbar-blue);
+} 
+
+.stall-numbers .foot-note,
+.stall-names .foot-note {
+    text-align: center;
+    margin-top: 250px;
+}
+
+@media (max-width: 900px) {
+    .stall-numbers {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .stall-numbers .back-link {
+        top: 100px;
+    }
+
+    .stall-numbers h3 {
+        font-size: 30px;
+        padding: 1rem;
+    }
+
+    .stall-numbers h6 {
+        font-size: 18px;
+    }
+
+    .stall-numbers .foot-note,
+    .stall-names .foot-note {
+        margin-top: 150px;
+    }
+}
+
+/* Stall Names */
+.stall-names {
+    padding: 2rem 4rem;
+    background-color: var(--green-two);
+    height: 500px;
+}
+
+.stall-names .back-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-family: var(--directive-font)
+}
+
+.stall-names .back-link:hover {
+    color: var(--green-one);
+}
+
+.stall-names h3 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--descriptive-font);
+    color: var(--green-one);
+    padding: 2rem 2rem;
+}
+
+.stall-names h6 {
+    font-size: 20px;
+    font-family: var(--descriptive-font);
+    color: var(--navbar-blue);
+}
+
+@media (max-width: 900px) {
+    .stall-names {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .stall-names .back-link {
+        top: 100px;
+    }
+
+    .stall-names h3 {
+        font-size: 30px;
+        padding: 1rem;
+    }
+
+    .stall-names h6 {
+        font-size: 18px;
+    }
+}
+
+/* Stall Display */
+.stall-display {
+    padding: 2rem 4rem;
+        background-color: var(--green-two);
+        height: 500px;
+}
+
+.stall-display h3{
+    font-size: 35px;
+        font-weight: 400;
+        text-align: center;
+        font-family: var(--descriptive-font);
+        color: var(--green-one);
+}
+
+
+.stall-display p {
+    text-align: center;
+    color: var(--orange);
+}
+
+
+.stall-display h6 {
+    color: var(--navbar-blue);
+    font-family: var(--descriptive-font);
+    font-size: 16px;
+  padding: 2rem 2rem;
+  
+}
+
+.stall-display h4 {
+    text-align: center;
+    font-family: var(--directive-font);
+    font-size: 20px;
+    color: var(--orange);
+}
+
+.stall-display a {
+    text-decoration: none;
+}
+
+.stall-display .foot-note {
+    padding: 1rem 1rem;
+    margin-top: 250px;
+
+}
+
+.stall-display .back-link {
+    color: var(--orange);
+    cursor: pointer;
+    position: absolute;
+    top: 175px;
+    left: 20px;
+    font-family: var(--directive-font)
+}
+
+.stall-display .back-link:hover {
+    color: var(--green-one);
+}
+
+@media (max-width: 900px) {
+    .stall-display {
+        padding: 2rem;
+        height: auto;
+    }
+
+    .stall-display h3 {
+        font-size: 30px;
+        padding: 1rem;
+    }
+
+    .stall-display p {
+        font-size: 16px;
+    }
+
+    .stall-display h6 {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .stall-display h4 {
+        font-size: 18px;
+    }
+
+    .stall-display .foot-note {
+        padding: 0.5rem;
+        margin-top: 150px;
+    }
+
+    .stall-display .back-link {
+        top: 100px;
+    }
+}

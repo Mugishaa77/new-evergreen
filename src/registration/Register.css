@@ -1,0 +1,186 @@
+/* User Identity */
+
+.user-id {
+    background-color: #E5FFDA
+}
+
+.user-id h2 {
+    font-family: 'Times New Roman', Times, serif;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 1.15px;
+}
+
+.user-id label {
+    font-family: 'Poppins', serif;
+        color: #1F5229;
+        padding: 1rem;
+
+}
+
+.user-id button {
+    width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 2rem;
+        font-weight: 400;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #1F5229;
+        color: #8fe051;
+        letter-spacing: 1.15px;
+
+}
+
+.user-id button:hover {
+    background-color: #BCE29E;
+        color: #1F5229;
+
+    }
+
+    /* User Address Info */
+
+.user-address {
+    background-color: #E5FFDA
+
+}
+
+.user-address h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.15px;
+}
+
+.user-address label {
+    font-family: 'Poppins', serif;
+    color: #1F5229;
+    padding: 1rem;
+
+}
+
+.user-address button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1F5229;
+    color: #8fe051;
+    letter-spacing: 1.15px;
+    margin-right: 25px;
+
+}
+
+.user-address button:hover {
+    background-color: #BCE29E;
+    color: #1F5229;
+
+}
+
+/* User Role */
+.user-role {
+    background-color: #E5FFDA
+}
+
+.user-role h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.15px;
+}
+
+.user-role label {
+    font-family: 'Poppins', serif;
+    color: #1F5229;
+    padding: 1rem;
+
+}
+
+.user-role button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1F5229;
+    color: #8fe051;
+    letter-spacing: 1.15px;
+    margin-right: 25px;
+
+}
+
+.user-role button:hover {
+    background-color: #BCE29E;
+    color: #1F5229;
+
+}
+
+.user-role .select-role {
+   width: 200px;
+   display: block;
+   border-radius: 7px;
+   height: 45px;
+   color: #1F5229;
+    border: 1px solid #1F5229;
+}
+
+.select-role option {
+    font-size: 16px;
+    color: #1F5229;
+    background-color: #F7CD7C;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Confirmation */
+
+.confirmation {
+    background-color: #E5FFDA;
+
+}
+
+.confirmation h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1.15px;
+
+}
+
+.confirmation p {
+    color: #1F5229;
+    font-family: 'Poppins', serif;
+}
+
+.confirmation button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    cursor: pointer;
+    background-color: #1F5229;
+    color: #8fe051;
+    letter-spacing: 1.15px;
+    outline: #8fe051;
+    border: none;
+    margin: 1rem;
+
+}
+
+.confirmation button:hover {
+    background-color: #BCE29E;
+    color: #1F5229;
+}
+
+.confirmation .submit {
+    width: 150px;
+}

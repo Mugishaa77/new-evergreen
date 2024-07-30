@@ -1,0 +1,261 @@
+.checkout {
+    background-color: var(--green-two);
+    padding: 2rem 4rem;
+
+}
+
+.checkout .back-link {
+    color: var(--orange);
+    font-family: var(--directive-font);
+}
+
+.checkout .back-link:hover {
+    color: var(--green-one);
+}
+
+.checkout h3 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    font-family: var(--descriptive-font);
+    color: var(--green-one);
+    margin-bottom: 20px;
+    ;
+}
+
+.ProgressBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.indexedStep {
+    color: var(--green-one);
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    background-color: var(--navbar-blue);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.indexedStep.accomplished {
+    background-color: var(--green-one);
+}
+
+.indexedStep p,
+.indexedStep.accomplished p {
+    margin: 10px;
+}
+
+.indexedStep.accomplished .index,
+.indexedStep .index {
+    color: var(--green-four);
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.checkout .last-check {
+    margin-top: 50px;
+}
+
+.checkout button {
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+    margin-top: 2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--green-one);
+    color: var(--green-four);
+    letter-spacing: 1.15px;
+    font-family: var(--directive-font);
+}
+
+.checkout button:hover {
+    background-color: var(--green-three);
+    color: var(--green-one);
+}
+
+.checkout p {
+    color: var(--green-one);
+    font-family: var(--descriptive-font);
+    font-size: 15px;
+}
+
+.order-complete {
+    color: var(--checkout-green);
+}
+
+
+@media (max-width: 900px) {
+    .checkout {
+        padding: 2rem;
+    }
+
+    .checkout h3 {
+        font-size: 28px;
+    }
+
+    .ProgressBar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .indexedStep {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        margin-right: 1rem;
+        margin-bottom: 0;
+        order: 2;
+    }
+
+    .indexedStep p,
+    .indexedStep.accomplished p {
+        margin: 0;
+    }
+
+    .indexedStep.accomplished .index,
+    .indexedStep .index {
+        font-size: 14px;
+    }
+
+    .checkout .last-check {
+        margin-top: 30px;
+    }
+
+    .checkout button {
+        width: 80px;
+        height: 35px;
+        margin-top: 1rem;
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .checkout p {
+        font-size: 10px;
+    }
+}
+
+/* step one */
+.step-one {
+    font-family: var(--descriptive-font);
+    padding: 20px;
+    color: var(--green-one);
+}
+
+.step-one h1 {
+    font-size:20px;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.order-table th,
+.order-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.order-table th {
+    background-color: #f5f5f5;
+}
+
+.order-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.order-table tfoot td {
+    text-align: right;
+}
+
+.order-table tfoot strong {
+    font-weight: bold;
+}
+
+
+/* Step two */
+.step-two {
+    font-family: var(--descriptive-font);
+    padding: 20px;
+    color: var(--green-one);
+}
+
+.step-two h1 {
+    font-size: 20px;
+}
+
+.step-two input {
+    height: 18px;
+    width: 180px;
+    border-radius: 2px;
+    display: flex;
+   align-items: center;
+    
+}
+
+.step-two button {
+    display: block;
+}
+
+/* Step Three */
+.step-three {
+    font-family: var(--descriptive-font);
+    padding: 20px;
+    color: var(--green-one);
+}
+
+.step-three h1 {
+    font-size: 20px;
+}
+
+.step-three h2 {
+    font-family: var(--directive-font);
+    font-size: 20px;
+}
+
+.step-three a {
+    text-decoration: none;
+    display: block;
+    font-size: 22px;
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.step-three a:hover {
+    color: orangered;
+}
+
+/* Step Four */
+.step-four {
+    font-family: var(--descriptive-font);
+    padding: 20px;
+    color: var(--green-one);
+}
+
+.step-four h1 {
+    font-size: 20px;
+}
+
+/* Step Five */
+.step-five {
+    font-family: var(--descriptive-font);
+    padding: 20px;
+    color: var(--green-one);
+}
+
+.step-five h1 {
+    font-size: 20px;
+}
