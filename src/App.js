@@ -6,7 +6,6 @@ import Navbar from './pages/Navbar';
 import Basket from './pages/Basket';
 import NotFound from './pages/NotFound';
 import BasketOne from './pages/BasketOne';
-import Display from './pages/Display';
 import Category from './pages/Category';
 import Wholesale from './pages/Wholesale';
 import Retail from './pages/Retail';
@@ -62,7 +61,6 @@ function App () {
           <Route path="/basket-one" exact element={<BasketOne />} />
           <Route path="/login" exact element={<Login/>} />
           <Route path="/farmer-ui" exact element={<FarmerProfile/>} />
-          <Route path="/main-display" exact element={<Display/>}/>
           <Route path="/category" exact element = {<Category/>}/>
           <Route path="/wholesale" exact element= {<Wholesale/>}/>
           <Route path="/retail" exact element={<Retail/>}/>
@@ -85,6 +83,7 @@ function App () {
             </Route>
             </Route>
 
+
             <Route path = "/grocer-dashboard" exact element={<GrocerDashboard/>}>
 
             <Route path="grocer-profile" exact element = {<GrocerProfile/>}/>
@@ -105,7 +104,7 @@ function App () {
           <Route path="*" element={<Navigate to="/not-found" />} />
           <Route path="/not-found" element={<NotFound />} />
           
-
+          
       </Routes>
       
       

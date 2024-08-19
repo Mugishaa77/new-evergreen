@@ -5,49 +5,25 @@
 }
 
 .basket h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 300;
     text-align: center;
     color:var(--green-one) ;
-    font-family: var(--descriptive-font);
+    font-family: var(--poppins);
+    padding: 0;
+    font-weight: bold;
 }
-
-.basket .back-link {
-    color: var(--orange);
-    cursor: pointer;
-    font-family: var(--directive-font);
-}
-
-.basket .back-link:hover {
-    color: var(--green-one);
-}
-
-.basket .next-link {
-    color: var(--orange);
-    font-family: var(--directive-font);
-    cursor: pointer;
-    position: absolute;
-        top: 200px;
-        right: 20px;
-
-}
-
-.basket .next-link:hover {
-    color: var(--green-one);
-}
-
-
 
 .basket .products {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin: 1rem;
    
 }
 
 .basket .product {
-    width: 250px;
+    width: 240px;
     max-width: 100%;
     height: 400px;
     display: flex;
@@ -55,10 +31,10 @@
     justify-content: space-between;
     margin: 1rem auto;
     padding: 1rem;
-    border-radius: 15px;
-    background-color: var(--green-three);
+    border-radius: 5px;
+    background-color: white;
     box-shadow: -5px -5px 10px 
-    var(--green-four),
+    var(--green-two),
     2px 2px 5px 
     var(--green-three);
 }
@@ -66,17 +42,23 @@
 .basket img {
     width: 200px;
     height: 200px;
-    margin-top: 1rem;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 15px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+   
 }
 
 .basket h3 {
-    font-size: 25px;
-    font-weight: 400;
+    font-size: 22px;
+    font-weight: bold;
     font-family: var(--descriptive-font);
     opacity: 0.8;
+    text-align: center;
+    padding-top: 1rem;
+    color: black;
+   
+    
 
 }
 
@@ -84,7 +66,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 }
 
 .basket .details .price {
@@ -93,22 +75,24 @@
         color: var(--green-one);
         letter-spacing: 1.15px;
         font-family: var(--descriptive-font);
+        margin: 0;
+        padding: 0;
 
 }
 
 .basket button {
-    width: 100%;
+    width: 60%;
     height: 40px;
     border-radius: 5px;
-    margin-top: 2rem;
     font-weight: 400;
     border: none;
     outline: none;
     cursor: pointer;
     background-color: var(--green-one);
-    color: var(--green-four);
+    color: var(--green-three);
     letter-spacing: 1.15px;
-    font-family: var(--directive-font);
+    font-family: var(--descriptive-font);
+    align-self: flex-end;
 }
 
 .basket button:hover {
@@ -545,3 +529,4 @@
         margin-top: 1.5rem;
     }
 }
+

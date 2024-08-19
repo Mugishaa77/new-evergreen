@@ -44,33 +44,8 @@ export default function Navbar () {
                   Market
                 </Link>
               </li> 
-              <li className="nav-item">
-                <Link
-                  to="/farmer-dashboard"
-                  className={`nav-link text-light ${activeLink === '/farmer-dashboard' ? 'active' : ''}`}
-                  onClick={() => setActiveLink('/farmer-dashboard')}
-                >
-                  Farmer
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/grocer-dashboard"
-                  className={`nav-link text-light ${activeLink === '/grocer-dashboard' ? 'active' : ''}`}
-                  onClick={() => setActiveLink('/grocer-dashboard')}
-                >
-                  Grocer
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  to="/main-display"
-                  className={`nav-link text-light ${activeLink === '/main-display' ? 'active' : ''}`}
-                  onClick={() => setActiveLink('/main-display')}
-                >
-                  Main Menu
-                </Link>
-              </li>
+              
+          
               <li className="nav-item">
                 <Link
                   to="/basket-one"
@@ -101,6 +76,26 @@ export default function Navbar () {
                   Contact Us
                 </a>
               </li>
+
+              <li className="nav-item">
+                <Link
+                  to="/farmer-dashboard"
+                  className={`nav-link text-light ${activeLink === '/farmer-dashboard' ? 'active' : ''}`}
+                  onClick={() => setActiveLink('/farmer-dashboard')}
+                >
+                  Farmer
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
+                  to="/grocer-dashboard"
+                  className={`nav-link text-light ${activeLink === '/grocer-dashboard' ? 'active' : ''}`}
+                  onClick={() => setActiveLink('/grocer-dashboard')}
+                >
+                  Grocer
+                </Link>
+              </li>
+             
             </ul>
           </div>
 
